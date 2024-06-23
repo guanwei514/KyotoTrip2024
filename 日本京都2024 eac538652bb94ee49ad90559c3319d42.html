@@ -1,0 +1,682 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>日本京都2024</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="eac53865-2bb9-4ee4-9ad9-0559c3319d42" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/woodcuts_6.jpg" style="object-position:center 0%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✈️</span></div><h1 class="page-title">日本京都2024</h1><p class="page-description"></p></header><div class="page-body"><figure id="6a5c3ec5-4b79-4831-96be-3bc71c644add" class="image"><a href="https://preview.redd.it/ypjkwzv6b0k51.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=a29922d4bb5847e20c86e4d5d86b4b1b252c80fb"><img style="width:1152px" src="https://preview.redd.it/ypjkwzv6b0k51.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=a29922d4bb5847e20c86e4d5d86b4b1b252c80fb"/></a></figure><div id="dde10432-c97d-4cf9-8644-09bcd4edd462" class="column-list"><div id="eb1909dc-4688-4e86-8cf0-f54401af982f" style="width:37.5%" class="column"><figure id="2f11defb-03f9-4f4f-a018-a47669781748"><div class="source"><a href="https://widgetbox.app/embed/calendar/simple/97c7eca5-5688-4df3-b086-884754f1e63a/05274f71-a63a-4c4d-bb48-b6903c714da2">https://widgetbox.app/embed/calendar/simple/97c7eca5-5688-4df3-b086-884754f1e63a/05274f71-a63a-4c4d-bb48-b6903c714da2</a></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b9a714b6-439f-40a7-bb3d-85850baef5b9"><div style="font-size:1.5em"><span class="icon">🌐</span></div><div style="width:100%"><mark class="highlight-blue"><strong>網站<br/><br/></strong></mark><mark class="highlight-blue"><strong><a href="https://kyoto.travel/tw/?fbclid=IwAR3EyHR3oMbEDdzXBvf9rgGFjFm04dio0PounfxGU-6Ba7FIyR9p87gAR-E_aem_th_AVI4W_D5q2w1DNg--JdmPrUU8A4Oaf8Sq1sXeRvduN6TWnLl3qNp5S3p2FHTaAHybcQ&amp;mibextid=Zxz2cZ">京都官方旅遊網</a></strong></mark><mark class="highlight-blue"><strong><br/><br/></strong></mark><mark class="highlight-blue"><strong><a href="https://www.youtube.com/watch?v=xmWCWKG2nzg&amp;ab_channel=2A%E5%A4%AB%E5%A6%BB">visit japan web教學</a></strong></mark><mark class="highlight-blue"><strong><br/><br/></strong></mark><mark class="highlight-blue"><strong><a href="https://www.youtube.com/watch?v=HsYQhOYrXQk&amp;ab_channel=2A%E5%A4%AB%E5%A6%BB">機場搭HARUKA細節影片</a></strong></mark></div></figure></div><div id="c8380d75-6474-432d-8d5a-2a1f5398c5b9" style="width:62.5%" class="column"><ul id="b7e41983-8564-4438-bc7a-9222762d30ca" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">注意嵐山小火車的訂票時程</span><div class="indented"></div></li></ul><ul id="fea30dae-4ae0-47ee-b44c-a13eacf747dc" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">注意琉璃光院的訂票時間點</span><div class="indented"></div></li></ul><ul id="945514e0-a4e4-4dd2-a34d-0d53757b5cd6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">保津川搭船的方法</span><div class="indented"></div></li></ul><ul id="e282b303-b38a-482b-8596-45fca695fe44" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">SIM卡購買或ESIM的訂閱方法</span><div class="indented"></div></li></ul><ul id="58123f65-16f7-451a-a6b4-f6c947195f08" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">HARUKA車票訂購</span><div class="indented"></div></li></ul><ul id="9bc689a3-3291-4ebd-b071-ec73c2bf82d5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">西瓜卡準備與購買方法</span><div class="indented"></div></li></ul><ul id="8bd20065-7c1b-44a8-8bab-5832018a3880" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">飯店訂的時間</span><div class="indented"></div></li></ul><ul id="0b1a2bd0-8072-4d5d-ba41-74fb74f3cc25" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">餐廳訂的時間</span><div class="indented"></div></li></ul><ul id="984d5526-9cc0-427d-9673-b953884a8f5d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">將資訊補充到去趣讓所有成員同步跟上行程規畫進度</span><div class="indented"></div></li></ul><ul id="a338ae6b-04f7-4d25-9144-197bf95269c3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">額外買旅遊平安險</span><div class="indented"></div></li></ul><ul id="b8a1ce3e-1761-44f5-a512-ac31c9a799b9" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">注意飛機提前劃位時間，提前安排座位</span><div class="indented"></div></li></ul></div></div><figure id="ecd3110b-d298-49a5-9d96-7f6519d237cd" class="image"><a href="https://preview.redd.it/ypjkwzv6b0k51.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=a29922d4bb5847e20c86e4d5d86b4b1b252c80fb"><img style="width:1152px" src="https://preview.redd.it/ypjkwzv6b0k51.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=a29922d4bb5847e20c86e4d5d86b4b1b252c80fb"/></a></figure><ul id="102ed07c-c216-46ce-96d4-239cb9d2cdee" class="toggle"><li><details open=""><summary>旅行成員</summary><ol type="1" id="684935ba-bb36-4357-b909-6c437fe81505" class="numbered-list" start="1"><li>蘇冠瑋</li></ol><ol type="1" id="eeb76f6e-b21f-4bd1-8c65-2fd311f67a45" class="numbered-list" start="2"><li>蔡麗雲</li></ol><ol type="1" id="7765c02a-4040-413d-ba63-11bd9b34f515" class="numbered-list" start="3"><li>蘇泰福</li></ol><ol type="1" id="39f67b28-0cfd-40a0-8880-ed9d3df191e5" class="numbered-list" start="4"><li>陳眉君</li></ol></details></li></ul><ul id="b8c156ee-9cf4-4717-8c4b-3ba75916a64f" class="toggle"><li><details open=""><summary>行前準備項目</summary><h3 id="221d882d-4e04-4630-b633-aa435a4ebbda" class="block-color-brown_background">事前項目</h3><ul id="f39b5c15-b521-4737-83bf-1827fd954556" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Haruka車票</span><div class="indented"></div></li></ul><ul id="d5d91c25-2bfd-4b88-90b6-870f8f122a11" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">SIM卡</span><div class="indented"></div></li></ul><ul id="c45ee5a6-ce73-4ae4-a51d-4e8afefb1133" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">西瓜卡</span><div class="indented"></div></li></ul><ul id="d4c3026c-d0c8-46e8-b112-f699bf5e5a6c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">旅平險</span><div class="indented"></div></li></ul><ul id="14074b65-d3bd-4d63-9e69-08abc9a850ee" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">機票</span><div class="indented"></div></li></ul><h3 id="256b9b63-7555-478c-bddd-644c87838ebc" class="block-color-brown_background">行李</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="bf09f65e-5730-4df2-b484-46126b25fb05"><div style="font-size:1.5em"><span class="icon">‼️</span></div><div style="width:100%">隨身包包</div></figure><ul id="38e47a47-7343-4151-9804-88c456a11209" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">手機</span><div class="indented"></div></li></ul><ul id="48679c29-e9ac-4623-bc3e-3432d03c9e9b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">錢包(台幣、身分證、健保卡、信用卡)</span><div class="indented"></div></li></ul><ul id="3c4974de-4c91-45e6-a1fa-10ee82d6e662" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">鑰匙</span><div class="indented"></div></li></ul><ul id="60fa20cf-3415-46bc-a565-5e3254611cee" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">護照</span><div class="indented"></div></li></ul><ul id="dfb88600-5773-4de9-ad52-b8aa94b50bba" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">日幣錢包、零錢包</span><div class="indented"></div></li></ul><ul id="00665a51-5a03-4ae7-bb3b-3cadeff1c0a5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">行動電源+充電線</span><div class="indented"></div></li></ul><ul id="414bb3f0-547d-49e1-ad23-e5d7da5751cc" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">衛生紙、濕紙巾、護手霜</span><div class="indented"></div></li></ul><ul id="62ad647a-ec21-4f14-b57d-1f834f8e9239" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">藥品</span><div class="indented"></div></li></ul><ul id="96b1432c-9c76-4fa0-b70d-e1864f978172" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">化妝包</span><div class="indented"></div></li></ul><p id="83974ac3-d3aa-4cc2-b9b0-032587f86140" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4e956300-5542-4bca-a879-7342d665ee40"><div style="font-size:1.5em"><span class="icon">🎒</span></div><div style="width:100%">登機後背包(限重7KG)</div></figure><ul id="3eff6b70-a753-4ee9-95f1-7619931bcd4e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">涼鞋(萬一日本會下雨)</span><div class="indented"></div></li></ul><ul id="28b5cbe0-2127-4ec7-87f3-4162a0638459" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">環保杯</span><div class="indented"></div></li></ul><ul id="e8fb3e1b-07e3-4df5-bdcc-6e53a4949edd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">牙線</span><div class="indented"></div></li></ul><ul id="c77ccb3c-55fb-4b87-b946-7f417e9322e8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Haruka 車票</span><div class="indented"></div></li></ul><ul id="747dee2a-af2e-4767-a73e-f4ea4ffc06d7" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">網卡(sim卡針)</span><div class="indented"></div></li></ul><ul id="a78d9a31-fb1c-4d01-bdb1-97d45151b409" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">口罩</span><div class="indented"></div></li></ul><ul id="c070a5ef-6f2c-4c93-bac4-787814308879" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">雨傘</span><div class="indented"></div></li></ul><ul id="a4a29a68-0677-4035-862e-2b0556c2cf66" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">購物袋</span><div class="indented"></div></li></ul><ul id="f3f637d7-ed33-473f-9f7b-6d4a7a17af51" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">薄外套</span><div class="indented"></div></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b92291c9-4a20-47b0-ad50-844fb97abb01"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/luggage_pink.svg"/></div><div style="width:100%">托運行李(限重23KG)</div></figure><div id="8591ac1f-4885-4adb-aa37-93918bead3e2" class="column-list"><div id="bdaf45fa-2049-4c0a-9ab6-9c50db241d85" style="width:75%" class="column"><ul id="c4fc3ca3-6a5e-4071-ba7b-62a429e5bb22" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">外出衣物</span><div class="indented"></div></li></ul><ul id="66377cc1-e0d6-41b9-919d-cc3bd87cee0c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">睡衣褲</span><div class="indented"></div></li></ul><ul id="94744011-6780-4daa-80bb-f5d82abf97e6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">內衣褲</span><div class="indented"></div></li></ul><ul id="61563fef-1736-4e1e-9c7b-b66c1f383418" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">襪子</span><div class="indented"></div></li></ul><ul id="ef027324-5746-4b4e-8074-96a7c8cbcaa2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">拖鞋</span><div class="indented"></div></li></ul><ul id="e7931163-a5e0-4957-93b8-487ee94e2115" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">眼鏡</span><div class="indented"></div></li></ul><ul id="e9833b57-def3-4885-a9d4-02a56da03ae8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">耳塞</span><div class="indented"></div></li></ul><ul id="4d4caa0a-37f2-424f-a306-06f0ca1a28da" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">髮膠乳</span><div class="indented"></div></li></ul><ul id="4ec83a4a-921c-44ca-af17-292147cfc207" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">車票. 門票影本</span><div class="indented"></div></li></ul></div><div id="0f437f5e-e4cb-4a06-b984-9e79ee91f9e4" style="width:70.83333333333333%" class="column"><ul id="3d112c99-96ec-4012-b3f4-bc5f2379cf68" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">日拋隱眼(夾子)</span><div class="indented"></div></li></ul><ul id="465d54f7-1bce-4de5-91c3-248159157b57" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">卸妝油</span><div class="indented"></div></li></ul><ul id="5670b43a-a651-409c-a85d-8f04fffb1fe5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">化妝品</span><div class="indented"></div></li></ul><ul id="1b7a2707-32ea-42f0-9e03-4c3eaf2b00cb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">保養品</span><div class="indented"></div></li></ul><ul id="2b698299-c15f-4f5a-8474-47781173c344" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">小剪刀</span><div class="indented"></div></li></ul><ul id="ff77b975-eb31-4854-849d-368ba6d0dda5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">髮箍</span><div class="indented"></div></li></ul><ul id="af0c8b2b-f858-40a4-b7e4-f17424f20e66" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">香水</span><div class="indented"></div></li></ul><ul id="132194aa-a846-4e6e-b4de-d0444fa8b476" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">梳子</span><div class="indented"></div></li></ul><ul id="10d8be73-61e5-438c-871c-4837045a28d8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">行李秤</span><div class="indented"></div></li></ul><p id="dafa04b5-1420-478b-aa72-4ccd69309b93" class="">
+</p></div><div id="6b4be01e-44a9-4ef4-b39a-f406813d18ac" style="width:112.50000000000004%" class="column"><ul id="94b6265b-f9a1-4135-8943-674163a72a59" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">電線(手機、手錶、隨充)</span><div class="indented"></div></li></ul><ul id="1bbd367b-00f9-479f-9d3c-f5ed42472020" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">藥品(胃藥、止痛、感冒)</span><div class="indented"></div></li></ul><ul id="008f52ad-9574-4632-8007-72201c1d572e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">蒸氣眼罩</span><div class="indented"></div></li></ul><ul id="6e87cd58-8137-4fd4-b4cf-92a54dc2675b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">手提行李袋</span><div class="indented"></div></li></ul><ul id="f2a6e04a-0d34-4f18-b850-4263f02036b7" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">休足時間、腿霜</span><div class="indented"></div></li></ul><ul id="3f3c51a9-8842-4ede-aa44-c78d5866a3eb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">充電頭</span><div class="indented"></div></li></ul><ul id="2ee931aa-ef18-4215-bcb1-f7f8f1fd40a4" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">髒衣袋(壓縮)</span><div class="indented"></div></li></ul><p id="89758803-8377-4fa4-bdb9-e84a1de00eeb" class="">
+</p></div></div></details></li></ul><ul id="de75aa8c-2099-4268-af3c-905ec0ffec20" class="toggle"><li><details open=""><summary>金額統計</summary><table id="82a38ccc-65c0-42ef-9aeb-5fa07f89fbbf" class="simple-table"><tbody><tr id="05a9cc29-756a-446c-a3c1-ee3dcdef27d6"><td id="^ipO" class="">項目</td><td id="oVOG" class="">人數</td><td id="hZhW" class="">幣別</td><td id="ikOR" class="">單價</td><td id="flQB" class="">總價</td></tr><tr id="a0cb2132-e55b-45f0-aa06-f83bf6c9754d"><td id="^ipO" class="">來回機票</td><td id="oVOG" class="">4</td><td id="hZhW" class="">台幣</td><td id="ikOR" class="">17040</td><td id="flQB" class="">68160</td></tr><tr id="6f973245-973e-4924-86e0-20ee7fa6100f"><td id="^ipO" class="">琉璃光院</td><td id="oVOG" class="">1</td><td id="hZhW" class="">日幣</td><td id="ikOR" class="">2000</td><td id="flQB" class=""></td></tr><tr id="024b3326-f8d5-48cb-a528-da03347193fc"><td id="^ipO" class=""></td><td id="oVOG" class=""></td><td id="hZhW" class=""></td><td id="ikOR" class=""></td><td id="flQB" class=""></td></tr></tbody></table></details></li></ul><ul id="65d5606a-1119-4ae7-9890-6433be769c98" class="toggle"><li><details open=""><summary>機票資訊</summary><figure id="5a04b072-b4c3-4b60-9d8a-9a398b17eb35" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled.png"><img style="width:708px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled.png"/></a></figure><figure id="bbcdae86-e307-46b7-a68a-dc7c4a316480" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%201.png"><img style="width:657px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%201.png"/></a></figure><figure id="cb71e50c-5a77-46ad-830a-17bc0c980080" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%202.png"><img style="width:680px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%202.png"/></a></figure></details></li></ul><ul id="0ae6210c-5e34-423f-b1b1-a557dac21f70" class="toggle"><li><details open=""><summary>機場接送服務評估</summary><ol type="1" id="b818086d-61fa-483d-8197-4440644f748d" class="numbered-list" start="1"><li>使用55688，訂車要在出發前72小時內才可以訂，定價約3600如下圖<figure id="2852e5b2-5324-47c5-9d73-f858be9288fa" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/IMG_3402.png"><img style="width:240px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/IMG_3402.png"/></a></figure></li></ol><ol type="1" id="80022581-024f-4f95-9a19-6dbbf742e4ee" class="numbered-list" start="2"><li>使用KKDay服務，還要細查，看起來才2500-3000<figure id="3a382e7d-5d96-4c46-8cbc-9a7e71c32356" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%203.png"><img style="width:1140px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%203.png"/></a></figure></li></ol><ol type="1" id="fd13a102-f8f9-4ff4-b915-2ed4e0634631" class="numbered-list" start="3"><li>搭乘機場快綫服務：<ol type="a" id="83d4068c-455a-49ac-bcf6-b8feb5f87341" class="numbered-list" start="1"><li>4件30吋行李</li></ol><ol type="a" id="dd598239-fde1-4172-b944-f7d78e7d4153" class="numbered-list" start="2"><li>夜間+120元</li></ol><ol type="a" id="769bfc45-e8d9-4ca8-98b9-ceff4a4850a0" class="numbered-list" start="3"><li>行車時間約120分鐘</li></ol><ol type="a" id="7f80a618-e427-4006-8b9f-dbf860dfd32c" class="numbered-list" start="4"><li>舒適六人座約:2830元, 舒適八人座約:3550元<br/><br/></li></ol><figure id="288792e1-9600-4b8e-8e44-431229d8413f" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%204.png"><img style="width:1370px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%204.png"/></a></figure></li></ol><ol type="1" id="377570e5-84cc-4f32-8582-c6a18e7b3a22" class="numbered-list" start="4"><li>使用”叫車吧”配合星宇航空優惠<ol type="a" id="9c1b6768-efd3-4ace-87e5-36bc22484f93" class="numbered-list" start="1"><li>一般折價輸入”<strong>BEST200</strong>”可以折價200</li></ol><ol type="a" id="19298762-e2b9-49ab-832b-fde7b2f66f16" class="numbered-list" start="2"><li>星宇航空機票折價，輸入優惠碼”<strong>CCBJX250</strong>”折價250元</li></ol><ol type="a" id="63909548-1465-43d5-82c8-6a09fb629a6b" class="numbered-list" start="3"><li>早上7點以前屬於半夜，半夜服務要加價200元</li></ol><ol type="a" id="f48d420d-cb36-4e30-959c-99ca3802642e" class="numbered-list" start="4"><li>4人要選到商務車，加價400元</li></ol><figure id="67d31ae1-3acc-489b-b0c9-4131e06c2b92" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%205.png"><img style="width:1102px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%205.png"/></a></figure><figure id="70072605-aa87-4868-a35c-ac224f7226de" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%206.png"><img style="width:652px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%206.png"/></a></figure></li></ol><ol type="1" id="612c0e76-8b91-4c05-97db-f32ca737a65a" class="numbered-list" start="5"><li>搭乘交通運輸工具<p id="8f3338fe-0c7a-44b4-b5e5-91ee4065934d" class="">估算總金額：1770</p><table id="8f6a0a34-2346-4ecc-aaa6-bf3b4c593fbd" class="simple-table"><tbody><tr id="9c33a4fe-c5e9-4c94-9b48-0ed4d0f45436"><td id="@Kld" class="">項目</td><td id="z{bU" class="">單人金額</td><td id="A:Pb" class="">老人單人金額</td></tr><tr id="f6a86127-4aeb-4132-9a0a-d3da1c1bd2e4"><td id="@Kld" class="">捷運文心公園到高鐵台中站</td><td id="z{bU" class="">25</td><td id="A:Pb" class="">12</td></tr><tr id="59501549-c72a-49c0-b17e-7cd077625727"><td id="@Kld" class="">高鐵台中到桃園</td><td id="z{bU" class="">540</td><td id="A:Pb" class="">270</td></tr><tr id="072e931c-678c-4b56-a21e-e0744c721149"><td id="@Kld" class="">捷運高鐵桃園到桃機第一航廈</td><td id="z{bU" class="">25</td><td id="A:Pb" class="">13</td></tr></tbody></table></li></ol></details></li></ul><ul id="956f1fd0-9123-47df-8680-ff8b26c7ae16" class="toggle"><li><details open=""><summary>出發前一天行程</summary><ol type="1" id="e2d62a93-15ab-4566-b0aa-7c64dc922797" class="numbered-list" start="1"><li>確認所有要帶出國的項目，請參閱行前準備項目</li></ol><ol type="1" id="df7fd949-80e4-464f-a06e-8d640479ac62" class="numbered-list" start="2"><li>集合到梅子哥家過夜一晚</li></ol><ol type="1" id="45068577-846a-490b-8c1e-6863f78d314b" class="numbered-list" start="3"><li>確認托運行李及手提行李裡面沒有違禁品</li></ol><p id="2acfe91b-4d3b-4e6c-949e-1843f214eac3" class="">        (行動電源、鋰電池不可以託運)<br/>        (超過100ml的液體、膠狀體等請放託運)<br/></p></details></li></ul><ul id="3f07c489-cd7e-4465-be0c-5924ed95e02c" class="toggle"><li><details open=""><summary>11/10(日) 第一天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3182d628-7367-4c01-83b1-b7dbd8acdf06"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">選擇要搭機場接送或是高鐵捷運</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="78bc6d21-ae22-427f-b5b4-93d136840647"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">抵達機場後搭乘HARUKA到京都應該也已經下午2點~3點，選擇一間離京都車站近的旅店進行第一天的歇憩<br/>傍晚搭公車與地鐵在附近進行晚餐與活動<br/></div></figure></details></li></ul><ul id="5691fedf-533f-4b98-ad4a-22191ec71652" class="toggle"><li><details open=""><summary>11/11(一) 第二天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="29ff09d2-4c04-4159-9e74-49e1451a6a0b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">搭京阪本線→叡山電鐵叡山線→<strong>寶池車站分岔(</strong>叡<strong>山電鐵鞍馬線)→貴船口(貴船神社).鞍馬(</strong>紅葉隧道<strong>)<br/>回來寶池車站分岔點(<br/></strong>叡<strong>山電鐵叡山本線)→八瀨比叡山口(琉璃光院)<br/>從京阪本線回京都市區晚餐<br/></strong></div></figure></details></li></ul><ul id="96345a01-109d-4fbc-a03d-95f37dc071d5" class="toggle"><li><details open=""><summary>11/12(二) 第三天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d43e1744-ba52-429a-9274-7fc1b68b03c4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">早上7點清水寺，八阪神社，祇園，花見小路……南禪寺</div></figure></details></li></ul><ul id="ae91e593-5233-4092-babc-7ef27f63adb1" class="toggle"><li><details open=""><summary>11/13(三) 第四天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b048547f-5081-4477-8804-95c254eac00c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">伏見稻禾神社千本鳥居，平等院，宇治</div></figure></details></li></ul><ul id="1f1162e0-cd7a-4df1-819a-509425726f91" class="toggle"><li><details open=""><summary>11/14(四) 第五天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="96457ac8-6421-4dda-b9c0-6295ee72eacf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">往嵐山方向</div></figure></details></li></ul><ul id="1eae46a4-690e-46f0-a7d5-719ee3003a27" class="toggle"><li><details open=""><summary>11/15(五) 第六天行程</summary><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="67cb8a85-cfe6-418e-a4e2-aa6162c40597"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>嵯峨→</strong>龜岡市→保津川遊川….</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d9eb1559-56d0-4803-ada3-6321e4db6f19"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">選一個離關西機場近的旅店最好可泡溫泉</div></figure></details></li></ul><ul id="38895adf-8111-4099-911f-ca496baf9e52" class="toggle"><li><details open=""><summary>11/16(六) 第七天行程</summary><ol type="1" id="9f22cf9b-f673-4d8d-96f6-51245e50b170" class="numbered-list" start="1"><li>早起吃飽早餐，再去泡個溫泉準備收拾行李回程</li></ol><ol type="1" id="15a83754-314f-435c-9de2-fca071c1a175" class="numbered-list" start="2"><li>預計早上10點前出發前往關西國際機場</li></ol><figure id="8d3ebaab-3396-4d41-9410-df6802eec193" class="image"><a href="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%207.png"><img style="width:738px" src="%E6%97%A5%E6%9C%AC%E4%BA%AC%E9%83%BD2024%20eac538652bb94ee49ad90559c3319d42/Untitled%207.png"/></a></figure></details></li></ul><p id="cf8e39dc-ae14-4365-b222-45ad29984b73" class="">
+</p><ul id="fc419178-737b-40d7-8a3a-b3cae936c271" class="toggle"><li><details open=""><summary>飯店相關參考資料</summary><p id="a2a3e059-49c5-415a-98eb-d510de5a2630" class="">比價SHEET </p><div id="6590b052-7903-4ad9-9642-b63f99b1e819" class="column-list"><div id="b9a65108-1ffb-49de-9788-c7d46e640f27" style="width:100%" class="column"><p id="75edf316-10f1-4a7a-8094-dc9fd8bae45e" class=""><mark class="highlight-gray_background"><strong>京都車站附近</strong></mark></p><p id="08f306e2-a8de-4091-9394-88c02f652cff" class=""><mark class="highlight-teal"><strong>ALA Hotel</strong></mark>:(人/晚)約2800~台幣，要分兩房(2/2)</p><p id="ab80dcde-cc4b-422f-b570-76910f9d96cb" class=""><mark class="highlight-teal"><strong>Nol</strong></mark>: (人/晚)約3300~台幣</p><p id="d03dc561-280f-4519-bb48-f38d912a3193" class=""><mark class="highlight-teal"><strong>Insomnia</strong></mark>: (人/晚)約2700~3000台幣</p><p id="43296d20-3345-4c43-bfdc-31f106382cdf" class=""><mark class="highlight-teal">星野OMO3</mark>: (人/晚)約1900~台幣，要分兩房(2/2)</p></div><div id="dab01ae4-8a22-4b48-a2fe-558dff193c0b" style="width:100%" class="column"><p id="15690c37-86a8-494b-bbae-73873afe81b4" class=""><mark class="highlight-gray_background"><strong>關西機場附近</strong></mark></p><p id="b992f5ad-0724-45e9-a281-647bcc01bb19" class=""><strong><a href="https://www.youtube.com/watch?v=m7wi-RtaZ9g&amp;t=766s&amp;ab_channel=AlanChannel%2F%E9%98%BF%E5%80%AB%E9%A0%BB%E9%81%93">Henn na Hotel Kansai Airport</a></strong><strong> </strong></p><p id="c99f3e02-0034-4b40-b269-1e1c1587cf4d" class="">
+</p></div></div><figure id="f5ca011f-14fb-4dc3-979a-d5b2c9a0f447"><a href="https://hoshinoresorts.com/ja/hotels/omo3kyototoji/?utm_source=google&amp;utm_medium=mybusiness" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">OMO3京都東寺 by 星野リゾート【公式】 | OMO3 Kyoto Toji by Hoshino Resorts</div><div class="bookmark-description">「心の時空トリップ」をコンセプトに、心を癒せるオアシスのようなホテル。宿泊者限定の世界遺産「東寺」の無料ガイドツアーを毎日開催。ご予約は当サイトが最もお得です。</div></div><div class="bookmark-href"><img src="https://media.hoshinoresorts.com/image/authenticated/s--Zg5MxBN2--/c_fill,g_auto,h_32,w_32/f_ico,q_auto/v1652066854/omo/images/favicon-1.ico" class="icon bookmark-icon"/>https://hoshinoresorts.com/ja/hotels/omo3kyototoji/?utm_source=google&amp;utm_medium=mybusiness</div></div><img src="https://media.hoshinoresorts.com/image/authenticated/s--adppp32a--/c_fill,g_auto,h_630,w_1200/f_auto,q_auto/v1652067026/omo/omo3kyototoji/images/OMOtojiKV_pr_jp-1.jpg" class="bookmark-image"/></a></figure><figure id="24a3c0f5-1c79-4060-8ce8-7771fe852ebe"><a href="https://www.nolhotels.com/kyoto-sanjo/?_gl=1*1pup31d*_gcl_au*MTI5Mjc3NDgzMi4xNzE5MTMxMzQ5&amp;_ga=2.245023877.1005951114.1719131350-1991428441.1719131350" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">【公式】ホテル nol kyoto sanjo｜京都三条</div><div class="bookmark-description">京都のホテル nol sanjo kyoto のオフィシャルWEBサイトへようこそ。その土地に住むように過ごす、をコンセプトに、IHヒーター、洗濯乾燥機、電子レンジをご用意しています。築230年の酒蔵を改築した館内はどこか哀愁を感じさせ、心地のいいご滞在をお楽しみいただけます。</div></div><div class="bookmark-href"><img src="https://www.nolhotels.com/kyoto-sanjo/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.nolhotels.com/kyoto-sanjo/?_gl=1*1pup31d*_gcl_au*MTI5Mjc3NDgzMi4xNzE5MTMxMzQ5&amp;_ga=2.245023877.1005951114.1719131350-1991428441.1719131350</div></div><img src="https://www.nolhotels.com/kyoto-sanjo/common/img/ogimg.jpg" class="bookmark-image"/></a></figure><figure id="03febd56-04aa-4746-897a-b3360c89c2c7"><a href="https://www.inso-mnia.com/kyoto/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">insomnia KYOTO OIKE【公式】</div><div class="bookmark-description">insomnia KYOTO OIKEの公式サイトです。地下鉄「烏丸御池」2番出口から徒歩1分。24時間ラウンジサービスが充実した、あなたをいつでも照らすホテル、insomnia KYOTO OIKE（インソムニア 京都御池）。宿泊予約受付中！</div></div><div class="bookmark-href"><img src="https://www.inso-mnia.com/kyoto/img/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.inso-mnia.com/kyoto/</div></div><img src="https://www.inso-mnia.com/kyoto/img/ogp.png" class="bookmark-image"/></a></figure><figure id="338e99b0-c454-40c2-874a-bbf9c7dc2a63"><a href="https://alahotel-kyoto.co.jp/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">【公式】ALA HOTEL KYOTO -アルアホテル京都 |</div><div class="bookmark-description">京都駅前に立地する「ALA HOTEL KYOTO」はビジネスホテルと観光ホテルを融合させた387室の客室 												 。観光都市、京都の玄関口である京都駅前に立地した、ビジネスにも観光にも適した新型ホテルです。</div></div><div class="bookmark-href">https://alahotel-kyoto.co.jp/</div></div></a></figure></details></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
